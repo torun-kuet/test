@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div style="width: 80%; margin-left: 10%; margin-top: -1%; background-color: #f3f3e5; padding-bottom: 10%;">
+  <br>
+  <p style="font-size: 200%;" align="center">
+<img src="bdlogo.png" height="100px", width="100px"><br> বাংলাদেশ ফলিত পুষ্টি গবেষণা ও প্রশিক্ষণ ইনস্টিটিউট (বারটান)
+</p>
+
+	<p style="font-size: 150%;text-align: center;">খাদ্যভিত্তিক পুষ্টি (ফলিত পুষ্টি) বিষয়ক প্রশিক্ষণ নিবন্ধন ফর্ম</p>
+	<br>
+	<hr>
+	<br>
+<form style="padding-bottom: 5%;" id="frm">
+<label for="st">নাম</label>
+<input type="text" id="st" placeholder="আপনার নাম" autofocus="autofocus"><br><br>
+<label for="st">পিতা বা স্বামীর নাম</label>
+<input type="text" id="nd" placeholder="অভিভাবকের নাম"><br><br>
+<label for="st">NID (এন.আই.ডি)</label>
+<input type="text" id="nd" placeholder="NID no."><br><br>
+<label for="st">মোবাইল নম্বর</label>
+<input type="text" id="nd" placeholder="মোবাইল নাম্বার"><br><br>
+<label for="r1"> লিঙ্গ</label>
+ <select id="sex" name="sex">
+      <option value="Male">পুরুষ</option>
+      <option value="Female">মহিলা</option>
+      <option value="Third Gender">তৃতীয় লিঙ্গ</option>
+ </select><br><br>
+ <label for="edu" > সর্বোচ্চ শিক্ষাগত যোগ্যতা</label>
+  <select id="edu" name="edu">
+  	  <option value="নেই">নেই</option>
+      <option value="প্রাথমিক">Primary Passed</option>
+      <option value="JSC">JSC/JDC</option>
+      <option value="SSC">SSC</option>
+      <option value="HSC">HSC</option>
+      <option value="BA/BBA/BSc/BArc">BA/BSc/BArch</option>
+      <option value="MA/MSc/MBA">MA/MBA/MSc</option>
+      <option value="PhD">PhD</option>
+ </select><br><br>
+ <label>পেশা</label>
+ <input type="text" id="job" placeholder="আপনার পেশা"><br><br>
+
+ <p style="font-size: 170%; text-align: center;"><b>যে অঞ্চলে প্রশিক্ষণ নিতে ইচ্ছুক</b></p>
+ <hr>
+ <label for="division"> বিভাগ</label>
+   <select id="division" name="division" onchange="load()">
+    <option>SELECT DIVISION</option>
+      <option value="Dhaka">Dhaka</option>
+      <option value="Khulna">Khulna</option>
+      <option value="Rajshahi">Rajshahi</option>
+      <option value="Rangpur">Rangpur</option>
+      <option value="Barisal">Barisal</option>
+      <option value="Chittagong">Chittagong</option>
+      <option value="Mymensing">Mymensing</option>
+      <option value="Sylhet">Sylhet</option>
+ </select><br>
+ <br>
+  <label for="">জেলা</label>
+  <select id="def">
+    <option>First Select Division</option>
+   
+  </select>
+ <select id="Dhaka" style="display: none;">
+
+   <option>Dhaka</option>
+   <option>Narayanganj</option>
+   <option>Faridpur</option>
+   <option>Gazipur</option>
+   <option>Gopalganj</option>
+   <option>Kishoreganj</option>
+   <option>Madaripur</option>
+   <option>Manikganj</option>
+   <option>Kishoreganj</option>
+   <option>Madaripur</option>
+   <option>Manikganj</option>
+   <option>Shariatpur</option>
+   <option>Tangail</option>
+ </select>
+  <select id="Khulna" style="display: none;">
+   <option>Khulna</option>
+   <option>Jhenaidah</option>
+   <option>Bagerhat</option>
+   <option>Chuadanga</option>
+   <option>Jashore</option>
+   <option>Kushtia</option>
+   <option>Magura</option>
+   <option>Meherpur</option>
+   <option>Narail</option>
+   <option>Satkhira</option>
+
+ </select>
+  <select id="Rajshahi" style="display: none;">
+   <option>Rajshahi</option>
+   <option>Natore</option>
+   <option>Bogura</option>
+   <option>Joypurhat</option>
+   <option>Naogaon</option>
+   <option>Chapai Nawabganj</option>
+   <option>Panchagarh</option>
+   <option>Thakurgaon</option>
+ </select>
+  <select id="Rangpur" style="display: none;">
+   <option>Rangpur</option>
+   <option>Dinajpur</option>
+   <option>Gaibandha</option>
+   <option>Kurigram</option>
+   <option>Lalmonirhat</option>
+   <option>Nilphamari</option>
+   <option>Pabna</option>
+   <option>Sirajganj</option>
+ </select>
+  <select id="Barisal" style="display: none;">
+   <option>Barisal</option>
+   <option>Bhola</option>
+   <option>Barguna</option>
+   <option>Jhalokati</option>
+   <option>Patuakhali</option>
+   <option>Pirojpur</option>
+
+ </select>
+  <select id="Chittagong" style="display: none;">
+   <option>Chittagong</option>
+   <option>Bandarban</option>
+   <option>Brahmanbaria</option>
+   <option>Chandpur</option>
+   <option>Comilla</option>
+   <option>Cox's Bazar</option>
+   <option>Feni</option>
+   <option>Khagrachhari</option>
+   <option>Lakshmipur</option>
+   <option>Noakhali</option>
+   <option>Rangamati</option>
+
+ </select>
+  <select id="Mymensing" style="display: none;">
+   <option>Mymensing</option>
+   <option>Sherpur</option>
+   <option>Jamalpur</option>
+   <option>Netrokona</option>
+ </select>
+  <select id="Sylhet" style="display: none;">
+   <option>Sylhet</option>
+   <option>Moulovibazar</option>
+   <option>Habiganj</option>
+   <option>Sunamganj</option>
+ </select>
+ <br><br>
+ <label>উপজেলা</label>
+ <input type="text" name="up" placeholder="উপজেলা">
+ <br><br>
+<label>আপনার সম্ভাব্য নিকটস্থ কার্যালয়</label>
+<select id="center">
+<option value="Head Office">বারটান প্রধান কার্যালয়, নারায়ণগঞ্জ</option>
+<option value="Netrokona">বারটান নেত্রকোনা আঞ্চলিক কার্যালয়</option>
+<option value="Noakhali">বারটান নোয়াখালী আঞ্চলিক কার্যালয়</option>
+<option value="Sunamganj">বারটান সুনামগঞ্জ আঞ্চলিক কার্যালয়</option>
+<option value="Sirajganj">বারটান সিরাজগঞ্জ আঞ্চলিক কার্যালয়</option>
+<option value="Rangpur">বারটান রংপুর আঞ্চলিক কার্যালয়</option>
+<option value="Jhenaidah">বারটান ঝিনাইদহ আঞ্চলিক কার্যালয়</option>
+<option value="Barisal">বারটান বরিশাল আঞ্চলিক কার্যালয়</option>
+</select>
+</form>
+<button id="b">SUBMIT</button>
+<br>
+<br>
+</div>
+
+
+
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { getDatabase,ref,set,get,child } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+   const firebaseConfig = {
+    apiKey: "AIzaSyD2jsq4fkJBoEVxhpAvA4BN1bVRWYkRcCc",
+    authDomain: "birtan-67733.firebaseapp.com",
+    databaseURL: "https://birtan-67733-default-rtdb.firebaseio.com",
+    projectId: "birtan-67733",
+    storageBucket: "birtan-67733.appspot.com",
+    messagingSenderId: "275785144912",
+    appId: "1:275785144912:web:f0d1dd592102fa3f580f55",
+    measurementId: "G-BZ3MBMP9KP"
+  };
+firebase.initializeApp(firebaseConfig);
+
+function insert()
+{
+	let f=document.getElementById("frm");
+
+  if(check_nid(f.elements[2].value))
+      dat(f.elements[0].value,f.elements[1].value,f.elements[2].value,f.elements[3].value,f.elements[4].value,f.elements[5].value,f.elements[6].value,f.elements[7].value,divdis(),f.elements[17].value,f.elements[18].value);
+else
+  alert("Person With this NID already Registered");
+
+
+
+     
+
+
+}
+
+
+function check_nid(nid)
+{
+  let flag=true;
+  var rf=firebase.database().ref("trainee"); 
+  rf.on('value', function(snapshot) {
+  snapshot.forEach(function(childSnapshot) {
+  var cd = childSnapshot.val();
+
+  
+    if(nid==cd.NID)
+    {
+      flag=false;
+      return flag;
+    }
+
+    console.log((cd.NID==nid),cd.NID);
+
+ 
+
+    
+    });
+});
+
+  return flag;
+    
+
+}
+
+function dat(name,fname,nid,num,sex,edu,job,div,dis,up,cen) {
+
+var rf=firebase.database().ref("trainee");    
+var t1=rf.push();
+t1.set({
+date: today(),
+Name: name,
+Guardians_name: fname,
+Mobile_Number: num,
+NID: nid,
+Sex: sex,
+Education: edu,
+Job: job,
+Division: div,
+District: dis,
+Upzila:up,
+Center: cen,
+
+
+});
+
+rf.once('child_added', snapshot => {
+  alert("Registered");
+})
+
+
+
+
+}
+
+function today()
+{
+   let tod = new Date().toISOString();
+    let dat=tod.slice(8,10)+'/'+tod.slice(5,7)+'/'+tod.slice(0,4);
+  
+
+  return dat+"_"+new Date().toLocaleTimeString();
+
+}
+
+
+document.getElementById("b").onclick=insert;
+
+
+
+function divdis()
+{
+  let div=document.getElementById("division");
+  let dis=document.getElementById(div.value);
+  return dis.value;
+}
+
+
+
+
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script type="text/javascript" src="code.js"></script>
+</body>
+</html>
